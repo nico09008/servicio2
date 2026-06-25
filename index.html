@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Espacio de Apoyo contra el Racismo</title>
+    <style>
+        /* Estilos Generales - Paleta Terrosa, Cálida y Minimalista */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcf9f5; /* Fondo arena/crema limpio */
+            color: #3e332e; /* Texto café oscuro profundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        /* Contenedor de la Tarjeta Principal (Diseño Geométrico Editorial) */
+        .container {
+            background-color: #ffffff; 
+            border-radius: 4px; /* Bordes casi rectos */
+            box-shadow: 0 12px 40px rgba(62, 51, 46, 0.08);
+            width: 100%;
+            max-width: 650px;
+            padding: 50px 40px;
+            border-left: 6px solid #c97a53; /* Detalle lateral terracota */
+            position: relative;
+        }
+
+        /* Botón de Regresar al inicio */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            color: #c97a53; 
+            text-decoration: none;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: color 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: #8c4f30; 
+        }
+
+        .btn-back svg {
+            margin-right: 8px;
+            fill: currentColor;
+        }
+
+        /* Títulos y Subtítulos */
+        h1 {
+            color: #2b221e; 
+            margin-bottom: 16px;
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+
+        p.subtitle {
+            color: #70625a;
+            margin-bottom: 35px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Contenedor de Bloques de Servicio */
+        .services-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 35px;
+        }
+
+        /* Tarjeta de Servicio Individual */
+        .service-card {
+            background-color: #faf8f5;
+            border: 1px solid #e6e0da;
+            border-radius: 2px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(62, 51, 46, 0.04);
+            border-color: #c97a53;
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        /* Iconos minimalistas en tonos terracota */
+        .service-icon {
+            color: #c97a53;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-title {
+            font-size: 18px;
+            color: #2b221e;
+            font-weight: 500;
+        }
+
+        .service-description {
+            font-size: 14px;
+            color: #5c504a;
+            line-height: 1.6;
+        }
+
+        /* Enlace de Acción Principal */
+        .btn-action {
+            display: block;
+            text-align: center;
+            background-color: #3e332e; 
+            color: #fcf9f5;
+            text-decoration: none;
+            padding: 16px 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background-color: #c97a53; 
+        }
+
+        /* Nota informativa inferior */
+        .info-notice {
+            border-top: 1px solid #e6e0da;
+            padding-top: 20px;
+            margin-top: 35px;
+            font-size: 13px;
+            color: #8a7b73;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Enlace para regresar a tu archivo principal nico.html -->
+        <a href="nico.html" class="btn-back">
+            <svg width="12" height="12" viewBox="0 0 24 24">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Volver al Inicio
+        </a>
+
+        <h1>Nuestros Servicios de Apoyo</h1>
+        <p class="subtitle">Desarrollamos e implementamos herramientas y espacios seguros dedicados plenamente a combatir la discriminación racial, brindando contención y promoviendo la equidad de manera integral.</p>
+
+        <div class="services-stack">
+            <!-- Servicio 1 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h2 class="service-title">Orientación ante Discriminación</h2>
+                </div>
+                <p class="service-description">Reciba asesoría inicial y confidencial si ha presenciado o atravesado una situación de sesgo o violencia racial. Evaluamos alternativas para canalizar o documentar el caso de manera segura.</p>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h2 class="service-title">Apoyo Emocional y Contención</h2>
+                </div>
+                <p class="service-description">Un espacio de escucha activa diseñado para procesar el impacto psicológico derivado del racismo sistémico o interpersonal, priorizando la salud mental y la restauración de la dignidad de las personas.</p>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h2 class="service-title">Talleres y Concientización</h2>
+                </div>
+                <p class="service-description">Diseñamos charlas dinámicas y proyectos pedagógicos de enfoque antirracista dirigidos a comunidades, colectivos e instituciones educativas que buscan construir entornos inclusivos.</p>
+            </div>
+        </div>
+
+        <!-- Enlace directo al formulario de contacto -->
+        <a href="contacto.html" class="btn-action">Solicitar un Servicio</a>
+
+        <div class="info-notice">
+            Cualquier solicitud de servicio o acompañamiento se gestiona de manera enteramente gratuita y bajo estrictas pautas de confidencialidad y respeto a su identidad.
+        </div>
+    </div>
+
+</body>
+</html>

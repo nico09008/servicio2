@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Espacio de Apoyo contra el Racismo</title>
+    <style>
+        /* Estilos Generales - Paleta Terrosa, Cálida y Minimalista */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcf9f5; /* Fondo arena/crema muy claro y limpio */
+            color: #3e332e; /* Texto café oscuro profundo para una lectura premium */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        /* Contenedor de la Tarjeta Principal (Diseño Geométrico y Limpio) */
+        .container {
+            background-color: #ffffff; 
+            border-radius: 4px; /* Bordes casi rectos, estilo editorial */
+            box-shadow: 0 12px 40px rgba(62, 51, 46, 0.08);
+            width: 100%;
+            max-width: 600px;
+            padding: 50px 40px;
+            border-left: 6px solid #c97a53; /* Detalle lateral en color terracota */
+            position: relative;
+        }
+
+        /* Botón de Regresar al inicio */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            color: #c97a53; /* Terracota */
+            text-decoration: none;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: color 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: #8c4f30; /* Terracota oscuro */
+        }
+
+        .btn-back svg {
+            margin-right: 8px;
+            fill: currentColor;
+        }
+
+        /* Títulos y Subtítulos */
+        h1 {
+            color: #2b221e; /* Café casi negro */
+            margin-bottom: 16px;
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+
+        p.subtitle {
+            color: #70625a;
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Grupos del Formulario */
+        .form-group {
+            margin-bottom: 28px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #3e332e;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Elementos de Entrada Minimalistas (Líneas rectas y elegantes) */
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #dcd5d0; /* Borde sutil café claro */
+            border-radius: 2px; /* Cuadrados tradicionales */
+            font-size: 15px;
+            background-color: #faf8f5;
+            color: #3e332e;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #c97a53; /* Cambio a terracota activo */
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(201, 122, 83, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        /* Botón de Enviar Sólido */
+        .btn-submit {
+            background-color: #3e332e; /* Café oscuro de contraste */
+            color: #fcf9f5;
+            border: none;
+            padding: 16px 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s ease;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #c97a53; /* Cambia a terracota al pasar el mouse */
+        }
+
+        /* Caja de Aviso Inferior */
+        .confidential-notice {
+            background-color: #faf8f5; 
+            border-top: 1px solid #e6e0da;
+            padding-top: 20px;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #8a7b73;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Enlace para regresar a tu archivo principal nico.html -->
+        <a href="nico.html" class="btn-back">
+            <svg width="12" height="12" viewBox="0 0 24 24">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Volver al Inicio
+        </a>
+
+        <h1>Contacto y Denuncia</h1>
+        <p class="subtitle">Este es un canal seguro dedicado a brindar orientación sobre discriminación racial, recopilar testimonios o coordinar propuestas educativas a favor de la inclusión.</p>
+
+        <form id="form-contacto-racismo">
+            <div class="form-group">
+                <label for="name">Nombre o Pseudónimo</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre (puedes usar un alias para proteger tu identidad)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Dirección de Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="help-type">Tipo de Solicitud</label>
+                <select id="help-type" name="help-type" required>
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="reporte">Reportar/Consultar una situación de discriminación</option>
+                    <option value="psicologica">Solicitud de Apoyo Emocional u Orientación</option>
+                    <option value="talleres">Información sobre charlas y proyectos educativos</option>
+                    <option value="otro">Otras consultas generales</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje / Descripción del caso</label>
+                <textarea id="message" name="message" placeholder="Escribe con detalle la situación o tu consulta aquí..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Formulario</button>
+        </form>
+
+        <!-- Mensaje de Éxito Moderno -->
+        <div id="mensaje-reporte-exito" style="display: none; margin-top: 20px; padding: 30px; background-color: #f7fcf9; border-left: 4px solid #2ecc71;">
+            <h3 style="color: #27ae60; font-weight: 500; font-size: 18px; margin-bottom: 8px;">El formulario se procesó correctamente</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.5;">Tu información ha sido recibida de manera segura. Analizaremos tu mensaje y nos pondremos en contacto contigo a través del correo proporcionado con la mayor discreción posible.</p>
+        </div>
+
+        <div class="confidential-notice">
+            <strong>Compromiso de Privacidad:</strong> La información recopilada en este espacio es de carácter estrictamente confidencial y se maneja bajo estrictos protocolos de protección de identidad.
+        </div>
+    </div>
+
+    <script>
+        // Manejador del evento de envío
+        document.getElementById('form-contacto-racismo').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página intente recargarse
+            this.style.display = 'none'; // Desaparece el formulario por completo
+            document.getElementById('mensaje-reporte-exito').style.display = 'block'; // Muestra el cuadro de éxito limpio
+        });
+    </script>
+</body>
+</html>

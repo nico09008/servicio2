@@ -1,0 +1,305 @@
+*{
+box-sizing:border-box;
+}
+body{
+font-size:16px;
+font-family: arial,helveltica,sans-serif;
+line-height: 1.4em; 
+background: #f9f9f9; /* CAMBIO: Fondo general claro para el sitio */
+color: #333333;      /* CAMBIO: Texto oscuro para legibilidad */
+}
+
+.contenedor{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.encabezado{ 
+background: #f5f5f5; /* CAMBIO: De negro a gris muy claro */
+overflow: hidden;
+border-bottom: 1px solid #e0e0e0;
+}
+.logo{
+    float: left;
+   position: relative;
+    top: 15px; 
+}
+.encabezado nav{ 
+float: right; 
+}
+.encabezado nav ul{ 
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.encabezado nav ul li{ 
+display: inline-block;
+/*background: 040BD1;*/
+margin-right: -4px;
+}
+.encabezado nav ul li a{ 
+display: block;
+color: #1a73e8; /* CAMBIO: De azul fuerte a un azul más amigable */
+padding: 28px;
+border-left: 1px solid #e0e0e0; /* CAMBIO: Borde claro */
+text-decoration: none;
+}
+/*cambio de color*/
+.encabezado nav ul li a:hover{ 
+background: #e0e0e0; /* CAMBIO: Hover claro */
+}
+/*------------------------------------
+PRESENTACION
+-------------------------------------*/ 
+.presentacion{
+  /*background: white;*/
+  background: radial-gradient(280px at 25% 10%, #a3d4ff, #e3f2fd); /* CAMBIO: De negro a un azul pastel muy claro */
+  overflow: hidden;
+  border-bottom: 3px solid #1a73e8; /* CAMBIO: Azul más suave */
+}  
+.introduccion-presentacion{
+    float: left;
+}
+.introduccion-presentacion h1{
+    color: #222222; /* CAMBIO: De blanco a gris oscuro para contrastar con el fondo claro */
+    font-size: 2.625em;  /*16px  1em  42px  ?*/
+    text-shadow: 1px 1px 0px #ffffff; /* CAMBIO: Sombra clara */
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+   line-height: 0.7em; /*interlineado  */
+} 
+.introduccion-presentacion h1 span{
+    color: #555555; /* CAMBIO: De blanco a gris medio */
+    font-size: 0.38em; /*42px = 2.62em 16px = ? =0.38*/
+}
+/*------------aprender------------mas*/
+a.aprender-mas{
+    font-size: 2.1875em;
+    border: 1px solid #0d5c25;
+    padding: 30px 50px;
+    /*background: blue;*/
+    display: block;
+    text-align: center;
+    margin: 10px 40px;
+    color: #155724; /* CAMBIO: Texto oscuro para el botón */
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    border-radius: 10px;
+    background: linear-gradient(to top, #d4edda, #ffffff); /* CAMBIO: Degradado de verde claro a blanco */
+    box-shadow: 0 8px 0 0 #c3e6cb,
+                0 0 25px 5px #b8daff; /* CAMBIO: Sombras más suaves y claras */
+} 
+a.aprender-mas:hover{
+    box-shadow: 0 0 25px 5px #b8daff;
+}
+.presentacion img{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+/*****************************************************************
+/*------------Acceso-rapido------------*/
+.acceso-rapido{
+    background: #ffffff; /* CAMBIO: De negro a blanco */
+    overflow: hidden;
+    border-bottom: 3px solid #1a73e8;
+}
+.acceso-rapido h2 {
+    color: #1a73e8;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #eee;
+    text-align: center;
+    border-bottom: 3px solid #e0e0e0;
+    padding-bottom: 16px;
+}
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+   font-size: 1.1875em;
+    margin-top: 9px;
+    margin-bottom: 20px; 
+}
+.acceso-rapido h3 a{
+    color: #333333; /* CAMBIO: De blanco a gris oscuro */
+    text-shadow: 1px 1px 0 #fff;
+    font-weight: normal;
+}
+.acceso-rapido h3 a:hover{
+    text-decoration: none;
+}
+/*---------bloque contenido----------*/
+.bloque-contenido{
+    overflow: hidden; /*2
+    margin-top: 25px; /** complemenatario 6  **/
+}
+.bloque-contenido .contenedor{  /*3**/
+    display: table;  */
+}
+.articulos { /** 1 **/
+    /*float: left;  /*elim 3 */
+    background: #ffffff; /* CAMBIO: De negro a blanco */
+    width: 65%; /*elimi  3*/
+  display: table-cell;  /*3*/
+  padding-right: 30px; /* 4*/
+}
+.articulos article{  /* 10   */
+    margin-bottom: 10px;
+}
+.articulos h2{  /**4**/
+    color: #1a73e8;
+    font-size: 1.625em;
+    border-bottom: 3px solid #1a73e8;
+    padding-bottom: 25px;
+}
+.articulos img{  /**5**/
+    float: left;
+    margin-right: 10px;
+    position: relative; /*  10  */
+    top: 5px;           /*   10 */
+}
+.articulos article h1{  /**6**/
+    font-size: 1.25em;  /*20/16 = 1.25em*/
+    /*margin: 0; ** 8  *** quitar 8 poner 9*/
+    margin: 8px 0 8px 0;  /*** 9 ****/
+}
+.articulos article h1 a{  /**7**/ 
+    color: #1a73e8;  /*HTML incluir href*/
+    text-decoration: none;
+}
+.articulos article h1 a:hover{  /**8**/ 
+    text-decoration: underline;
+}
+.articulos article p{  /** 9 **/ 
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em; /*** 14/16 = 0.875 ***/
+    color: #555555; /* CAMBIO: Color de texto suave */
+}
+.complementario{    /*   1  */
+    background: #f5f5f5; /* CAMBIO: De negro a gris claro */
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20 px; /***2**laterales sup e inf*/
+}
+.complementario h2{   /** 2  **/
+    font-size: 1.625em;  /* 26/16 em*/ 
+    color: #333333; /* CAMBIO: De negro a gris oscuro */
+    font-weight: normal;
+    text-align: center;
+}
+.complementario ul{   /** 3  **/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.complementario ul li{ /*** 4 ***/
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+.complementario ul li a{ /*** 5 ***/
+    color: #1a73e8; /* CAMBIO: De blanco a azul */
+    text-decoration: none;
+}
+.complementario ul li a:hover{ /*** 6 ***/
+    color: blue;
+    text-decoration: underline; /* ir a bloque-conteniodo*/
+}
+/***********************************************************************/
+/************** suscripcion */
+.suscripcion{  /**1***/
+    overflow: hidden;
+    border: 1px solid #e0e0e0;  
+    background: #f5f5f5;   /* CAMBIO: De negro a gris claro */
+    margin-top: 20PX;  /*** 2  B  ****/
+    padding: 15px;
+}
+.suscripcion h2{ /***2***/
+    float: left;
+    font-size: 1.625em; /*26/16  */
+    color: #1a73e8;
+    font-weight: normal;
+}
+.suscripcion form{  /***2***/
+    float: right;
+    position: relative; /** 2 a ***/
+    top: 20px;   /***  2  a   ****/
+}
+.suscripcion form input{   /***3  ***/
+    border: 1px solid #1a73e8;
+    padding: 10px;
+    background: #ffffff;
+}
+.suscripcion form input[type="submit"]{ /*** 4   ***/
+    border: 1px solid #1a73e8;
+    padding: 10px;
+    background: #1a73e8; /* CAMBIO: Botón azul llamativo */
+    color: #ffffff; /* CAMBIO: Texto blanco */
+    text-shadow: none;
+    box-shadow: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.suscripcion form input[type="submit"]:hover{ /*** 5   ***/
+    background: #1557b0; /* CAMBIO: Azul más oscuro al pasar el cursor */
+}
+/***********pie de pagina**************/
+.piedepagina{   /**1 **/
+    background: #e0e0e0; /* CAMBIO: De negro a gris medio-claro */
+    padding: 20px 0; /*** 7  c  */
+}
+.piedepagina .contenedor{   /**2  **/
+    display: table;
+}
+.piedepagina small{  /***3  ***/
+    display: table-cell;
+    background: transparent;  
+    color: #333333;  /* CAMBIO: Texto oscuro */
+}
+.piedepagina nav{ /**** 4  ***/
+    display: table-cell;
+    background: transparent;  
+    text-align: right; /***6  **/
+}
+.piedepagina nav ul{ /**** 5 ***/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.piedepagina nav ul li{ /**** 6 ***/
+    display: inline-block;
+    padding-left: 10px;  /** 7  d ****/
+}
+.piedepagina nav ul li a{ /**** 7 ***/
+    color: #333333; /* CAMBIO: De negro a gris oscuro */
+    text-decoration: none;
+}
+.piedepagina nav ul li a:hover{ /**** 7 ***/
+    color: #1a73e8;
+    text-decoration: underline;
+}
+/*************Redes sociales***************/
+.social{
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+.social a{
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+.social a:hover{
+    opacity: 1;
+}
+.social img{
+    border-radius: 50%;
+    display: block;
+}
